@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class DersListesi extends StatelessWidget {
   final Function onDismiss;
-  const DersListesi({required this.onDismiss, Key? key}) : super(key: key);
+  const DersListesi({required this.onDismiss, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,6 +40,7 @@ class DersListesi extends StatelessWidget {
                 ),
               );
             })
+        // ignore: avoid_unnecessary_containers
         : Container(
             child: Center(
               child: Text(
